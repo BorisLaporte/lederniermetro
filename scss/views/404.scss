@@ -1,0 +1,65 @@
+.show-nothing{
+	header{
+		display: none;
+	}
+	footer{
+		display: none;
+	}
+}
+#lost_in_the_woods{
+	width: 100%;
+	position: relative;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+
+	.content_wrapper{
+		background-color: #fff;
+		max-width: 800px;
+		margin: auto;
+		position: relative;
+		display: flex;
+		justify-content: center;
+		margin-bottom: 60px;
+		text-align: center;
+		padding-bottom: 60px;
+
+		.metro-illu{
+			padding-top: 50px;
+			width: 110px;
+		}
+
+		.title{
+			margin-top: 20px;
+			margin-bottom: 8px;
+			font-family: 'MenckenOTHead-Bold';
+			font-size: 20px;
+			color: #555555;
+		}
+
+		.description{
+			font-family: 'MenckenOTHead-Regular';
+			font-size: 16px;
+			color: #555555;
+			margin-bottom: 50px;
+		}
+
+		.back-home{
+			color: #b49566;
+			font-family: 'ArdoiseStd-Bold';
+			font-size: 14px;
+			border-bottom: 3px solid #b49566;
+			cursor: pointer;
+			transition: all 0.3s ease-out;
+			
+
+			&:hover{
+				color: #d0aa71;
+				transition: all 0.3s ease;
+				border-bottom: 3px solid #d0aa71;
+			}
+		}
+
+	}
+
+}

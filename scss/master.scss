@@ -1,0 +1,32 @@
+/*
+Theme Name: LeDernierMetro
+Theme URI: http://wordpress.org
+Author: Boris Laporte & Matthieu Tourdes
+Author URI: http://mattieutourdes.com/
+Version: 1.0
+*/
+
+// Reset
+@import "lib/reset";
+
+@import "config/fonts";
+@import "config/colors";
+
+
+@import "main";
+
+@import "partial/header";
+@import "partial/footer";
+
+@import "views/home.scss";
+@import "views/portrait.scss";
+@import "views/adress.scss";
+@import "views/culture.scss";
+@import "views/archive-adress.scss";
+@import "views/archive-culture.scss";
+@import "views/archive-portraits.scss";
+@import "views/map.scss";
+@import "views/about.scss";
+@import "views/dropdown-input.scss";
+@import "views/mentions-legales.scss";
+@import "views/404.scss";

@@ -1,0 +1,133 @@
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+body{
+	background: #fafafa;
+
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	-ms-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+}
+
+* {
+  box-sizing:border-box;
+  -webkit-font-smoothing:antialiased;
+  user-select: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+.content_wrapper{
+	.goodadress_container, .culture_container{	
+		.corner_img{
+			position: absolute;
+			width: 300px;
+			height: auto;
+			bottom: 0;
+			z-index: 10;
+		}
+	}
+
+}
+.infinite_scroll{
+	margin: 0;
+	position: relative;
+	display: block;
+	height: 150px;
+	width: 100%;
+
+	.button_load_more{
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate3d(-50%, -50%, 0);
+	    width: auto;
+	    height: 46px;
+	    padding: 15px 30px;
+	    font-family: ArdoiseStd-Regular;
+	    text-transform: uppercase;
+	    font-size: 12px;
+	    color: #b49566;
+	    border: 1px solid #b49566;
+	    transition: all .3s ease-out;
+
+	    &:hover{
+			background-color: #b49566;
+			color: #fff;
+			transition: all 0.3s ease;
+		}
+	}
+
+	.loader_gif{
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate3d(-50%, -50%, 0);
+		width: 10px;
+		height: 10px;
+		background-color: #b49566;
+		border-radius: 50%;
+		display: none;
+		animation: loading 1s ease-in infinite alternate; 
+
+		&.visible{
+			display: block;
+		}
+	}
+
+	&.deactivate{
+		.button_load_more{
+			display: none;
+		}
+	}
+
+}
+
+
+.go-up{
+	position: fixed;
+	bottom: 70px;
+	right: 100px;
+	display: none;
+	opacity: 0.3;
+	z-index: 10;
+	cursor: pointer;
+
+	&.visible{
+		display: inline-block;
+	}
+
+	img{
+		position: relative;
+		width: 30px;
+		height: auto;
+		display: inline-block;
+	}
+}
+
+@keyframes loading {
+  0%   { width: 10px;height: 10px; }
+  100% { width: 30px;height: 30px; }
+}
+
+section{
+	@media screen and (max-width: 960px) {
+		padding-top: 55px;
+	}
+}
+
+.not-found{
+    font-size: 16px;
+    display: block;
+    color: #555;
+    font-family: MenckenOTHead-Regular;
+    padding-top: 80px;
+    line-height: 20px;
+    text-align: center;
+}

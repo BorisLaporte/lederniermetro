@@ -1,0 +1,1 @@
+<div class="not-found">Désoler aucun article n'a été trouvé</div>

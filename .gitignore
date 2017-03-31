@@ -2,3 +2,4 @@
 js/
 css/
 .DS_STORE
+wp-gulp/node_modules/
